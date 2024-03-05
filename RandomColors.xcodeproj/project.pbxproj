@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		EF0887B42B9681C50017633C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0887B32B9681C50017633C /* AppDelegate.swift */; };
 		EF0887B62B9681C50017633C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0887B52B9681C50017633C /* SceneDelegate.swift */; };
-		EF0887B82B9681C50017633C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0887B72B9681C50017633C /* ViewController.swift */; };
 		EF0887BB2B9681C50017633C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0887B92B9681C50017633C /* Main.storyboard */; };
 		EF0887BD2B9681C70017633C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0887BC2B9681C70017633C /* Assets.xcassets */; };
 		EF0887C02B9681C70017633C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0887BE2B9681C70017633C /* LaunchScreen.storyboard */; };
 		EF0887CB2B9681C80017633C /* RandomColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0887CA2B9681C80017633C /* RandomColorsTests.swift */; };
 		EF0887D52B9681C80017633C /* RandomColorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0887D42B9681C80017633C /* RandomColorsUITests.swift */; };
 		EF0887D72B9681C80017633C /* RandomColorsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0887D62B9681C80017633C /* RandomColorsUITestsLaunchTests.swift */; };
+		EF0887E42B9682480017633C /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0887E32B9682480017633C /* ColorsTableVC.swift */; };
+		EFDD657C2B96EBEF00A1A535 /* ColorsDetailsVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDD657B2B96EBEF00A1A535 /* ColorsDetailsVCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		EF0887B02B9681C50017633C /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0887B32B9681C50017633C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF0887B52B9681C50017633C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EF0887B72B9681C50017633C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF0887BA2B9681C50017633C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF0887BC2B9681C70017633C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF0887BF2B9681C70017633C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		EF0887D02B9681C80017633C /* RandomColorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0887D42B9681C80017633C /* RandomColorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsUITests.swift; sourceTree = "<group>"; };
 		EF0887D62B9681C80017633C /* RandomColorsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF0887E32B9682480017633C /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
+		EFDD657B2B96EBEF00A1A535 /* ColorsDetailsVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailsVCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,8 @@
 			children = (
 				EF0887B32B9681C50017633C /* AppDelegate.swift */,
 				EF0887B52B9681C50017633C /* SceneDelegate.swift */,
-				EF0887B72B9681C50017633C /* ViewController.swift */,
+				EF0887E32B9682480017633C /* ColorsTableVC.swift */,
+				EFDD657B2B96EBEF00A1A535 /* ColorsDetailsVCViewController.swift */,
 				EF0887B92B9681C50017633C /* Main.storyboard */,
 				EF0887BC2B9681C70017633C /* Assets.xcassets */,
 				EF0887BE2B9681C70017633C /* LaunchScreen.storyboard */,
@@ -258,8 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF0887B82B9681C50017633C /* ViewController.swift in Sources */,
+				EF0887E42B9682480017633C /* ColorsTableVC.swift in Sources */,
 				EF0887B42B9681C50017633C /* AppDelegate.swift in Sources */,
+				EFDD657C2B96EBEF00A1A535 /* ColorsDetailsVCViewController.swift in Sources */,
 				EF0887B62B9681C50017633C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
