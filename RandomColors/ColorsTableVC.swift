@@ -7,15 +7,21 @@
 
 import UIKit
 
-class ColorsTableVC: UIViewController  {
-    
+class ColorsTableVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+
+}
+
+extension ColorsTableVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        50
+    }
     
-    @IBAction func tempButtonTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "ToCOlorDetailsVC", sender: nil)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }
